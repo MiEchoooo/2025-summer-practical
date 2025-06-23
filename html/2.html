@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh=CN">
+  <head>
+    <meta charset="UTF-8">
+    <title>test 2</title>
+  </head>
+  <body>
+    <form action="/submit" method="post">
+      <lable for="avatar">头像</lable>
+      <input type="file" id="avatar" name="avatar">
+      <br><br>
+
+      <label for="nickname">昵称</label>
+      <input type="text" id="nickname" name="nickname">
+      <br><br>
+
+      <label for="education">学历</label>
+      <select id="education" name="education">
+        <option value="diplama">大专</option>
+        <option value="bachelor">本科</option>
+      </select>
+      <br><br>
+
+      <label for="gender">性别</label>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">男</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <lable for="female">女</lable>
+      <br><br>
+
+      <label for="hobbies">爱好</label>
+      <input type="checkbox" id="movie" name="hobbies" value="movie">
+      <label for="movie">电影</label>
+
+      <input type="checkbox" id="photography" name="hobbies" value="photography">
+      <label for="photography">摄影</label>
+
+      <input type="checkbox" id="music" name="hobbies" value="music">
+      <label for="music">音乐</label>
+
+      <input type="checkbox" id="reading" name="hobbies" value="reading">
+      <label for="reading">阅读</label>
+      <br><br>
+
+      <label for="signature">签名</label>
+      <textarea id="signature" name="signature" rows="4" cols="50"></textarea>
+      <br><br>
+
+      <button type="submit" value="保存">保存</button>
+    </form>
+    <footer align="right">2025-06-23</footer>
+  </body>
+</html>
