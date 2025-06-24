@@ -5,7 +5,6 @@ import "fmt"
 func Deduplicate(nums []int) []int {
 	seen := make(map[int]bool)
 	var result []int
-
 	for _, num := range nums {
 		if !seen[num] {
 			seen[num] = true

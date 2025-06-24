@@ -1,0 +1,20 @@
+/* 两边定宽，中间自适应 */
+.container{
+  display: flex;
+  height: 200px;
+}
+
+.left{
+  width: 100px;
+  background-color: red;
+}
+
+.middle{
+  flex: auto;
+  background-color: yellow;
+}
+
+.right{
+  width: 100px;
+  background-color: blue;
+}
