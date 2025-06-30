@@ -2,7 +2,7 @@
  * @param {Function[]} functions
  * @return {Function}
  */
-var compose = function(functions) {
+var compose = function(functions)   {
     
 	return function(x) {
     let len = functions.length;
