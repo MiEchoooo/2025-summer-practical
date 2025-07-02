@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>重绘演示</title>
+<style>
+.target {
+width: 200px;
+height: 200px;
+background: #f00;
+margin: 20px;
+transition: all 0.3s;
+}
+button {
+padding: 10px 20px;
+margin: 10px;
+}
+</style>
+</head>
+<body>
+<button onclick="triggerRepaint()">触发重绘</button>
+<div class="target" id="demoBox"></div>
+<script>
+function triggerRepaint() {
+const box = document.getElementById('demoBox');
+box.style.backgroundColor = '#0f0';
+box.style.boxShadow = '5px 5px 5px #999';
+console.log('触发了2次重绘');
+}
+</script>
+</body>
+</html>
